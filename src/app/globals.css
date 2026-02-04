@@ -1,26 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Austin Violet Crown Palette */
+  --violet-crown-900: #1e1b29;
+  /* Deep Slate/Purple for text */
+  --violet-crown-800: #2d2a3d;
+  --sunset-orange: #ec854a;
+  /* Gradient accents */
+  --twilight-pink: #c47fd5;
+  /* Accents */
+  --deep-blue: #536b98;
+  /* Deep Blue companion */
+  --soft-white: #f8f5f2;
+  /* Background */
+
+  --background: var(--soft-white);
+  --foreground: var(--violet-crown-900);
 }
 
 @theme inline {
+  --color-violet-crown-900: var(--violet-crown-900);
+  --color-violet-crown-800: var(--violet-crown-800);
+  --color-sunset-orange: var(--sunset-orange);
+  --color-twilight-pink: var(--twilight-pink);
+  --color-deep-blue: var(--deep-blue);
+  --color-soft-white: var(--soft-white);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --font-serif: var(--font-serif);
+  --font-mono: var(--font-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Base styles for smooth scrolling and selection */
+/* Base styles for smooth scrolling and selection */
+html {
+  scroll-behavior: smooth;
+
+  background: var(--background);
+  /* Visible Gradient: Soft White -> Twilight Pink Tint -> Sunset Orange Tint */
+  /* Opacity set to 40% as requested */
+  background-image: linear-gradient(135deg, var(--soft-white) 0%, rgba(196, 127, 213, 0.50) 50%, rgba(255, 158, 100, 0.60) 100%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background-color: var(--twilight-pink);
+  color: var(--soft-white);
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-mono);
+  /* Default technical feel */
+  cursor: default;
+}
+
+a,
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
 }

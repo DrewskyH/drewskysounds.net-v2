@@ -1,0 +1,45 @@
+[
+    {
+        "id": "project-1",
+        "title": "Neon Horizon",
+        "description": "Original score and sound design for the award-winning short film about cyberpunk aesthetics.",
+        "tags": [
+            "score",
+            "sound design"
+        ],
+        "vimeoId": "76979871",
+        "year": "2025"
+    },
+    {
+        "id": "project-2",
+        "title": "Abstract Shapes",
+        "description": "Audio mixing and final mastering for a motion graphics campaign.",
+        "tags": [
+            "mix",
+            "sound design"
+        ],
+        "vimeoId": "76979871",
+        "year": "2024"
+    },
+    {
+        "id": "project-3",
+        "title": "Echoes of Silence",
+        "description": "Full orchestral composition recorded live at Air Studios.",
+        "tags": [
+            "score"
+        ],
+        "vimeoId": "76979871",
+        "year": "2024"
+    },
+    {
+        "id": "project-4",
+        "title": "Urban Rhythms",
+        "description": "Soundscapes and foley work for an urban exploration documentary.",
+        "tags": [
+            "sound design",
+            "mix"
+        ],
+        "vimeoId": "76979871",
+        "year": "2023"
+    }
+]
