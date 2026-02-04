@@ -28,7 +28,7 @@ export default function ContactPage() {
             </BlurFocus>
             <BlurFocus className="relative w-2/5 aspect-[6/9] rounded-sm overflow-hidden shadow-lg mb-6" hoverScale={1.007}>
                 <Image
-                    src="/images/contact-me-2.png"
+                    src="/images/contact-me-2.webp"
                     alt="Drewsky answering 7 phones"
                     fill
                     className="object-cover"

@@ -21,7 +21,7 @@ export default function StudioPage() {
                 <div className="grid grid-cols-2 gap-4 mb-12">
                     <BlurFocus className="relative w-full aspect-[4/3] rounded-sm overflow-hidden shadow-lg hoverScale={1.04}">
                         <Image
-                            src="/images/studio/studio-2.png"
+                            src="/images/studio/studio-2.webp"
                             alt="Wide shot of the studio workspace"
                             fill
                             className="object-cover"
@@ -31,7 +31,7 @@ export default function StudioPage() {
 
                     <BlurFocus className="relative w-full aspect-[4/3] rounded-sm overflow-hidden shadow-lg hoverScale={1.04}">
                         <Image
-                            src="/images/studio/studio-3.png"
+                            src="/images/studio/studio-3.webp"
                             alt="Alternative view of the studio"
                             fill
                             className="object-cover"
@@ -124,7 +124,7 @@ export default function StudioPage() {
                 {[1, 2, 3, 4].map((num) => (
                     <BlurFocus key={num} className="relative aspect-[3/2] rounded-sm overflow-hidden shadow-md group" hoverScale={1.02}>
                         <Image
-                            src={`/images/studio/grid-${num}.png`}
+                            src={`/images/studio/grid-${num}.webp`}
                             alt={`Studio texture detail ${num}`}
                             fill
                             className="object-cover transition-transform duration-700"

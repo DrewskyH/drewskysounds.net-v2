@@ -61,7 +61,7 @@ export function Sidebar() {
             <div className="pointer-events-auto">
                 <BlurFocus className="w-fit group" hoverScale={3} duration={5}>
                     <img
-                        src="/images/ofavicon-2.png"
+                        src="/images/ofavicon-2.webp"
                         alt="Logo"
                         width={24}
                         height={24}

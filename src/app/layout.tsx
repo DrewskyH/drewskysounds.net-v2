@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 };
 
 import { Sidebar } from "@/components/Sidebar";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function RootLayout({
   children,
@@ -42,6 +43,7 @@ export default function RootLayout({
             </div>
           </main>
         </div>
+        <SpeedInsights />
       </body>
     </html>
   );

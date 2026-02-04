@@ -11,7 +11,7 @@ export default function Home() {
       {/* Visual Column */}
       <BlurFocus className="relative aspect-[4/5] w-full max-w-md mx-auto lg:mx-0 rounded-sm overflow-hidden">
         <Image
-          src="/images/portrait2.png"
+          src="/images/portrait2.webp"
           alt="Drewsky Hulett"
           fill
           className="object-cover"
