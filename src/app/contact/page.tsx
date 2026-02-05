@@ -26,7 +26,7 @@ export default function ContactPage() {
                     Available for new projects, collaborations, and sonic explorations.
                 </p>
             </BlurFocus>
-            <BlurFocus className="relative w-2/5 aspect-[6/9] rounded-sm overflow-hidden shadow-lg mb-6" hoverScale={1.007}>
+            <BlurFocus className="relative w-2/5 aspect-[6/9] rounded-sm overflow-hidden shadow-lg mb-6 mx-auto md:mx-0" hoverScale={1.007}>
                 <FadeInImage
                     src="/images/contact-me-2.webp"
                     alt="Drewsky answering 7 phones"
@@ -36,7 +36,7 @@ export default function ContactPage() {
                 <div className="absolute inset-0 bg-violet-crown-900/10 mix-blend-multiply" />
             </BlurFocus>
             <BlurFocus as="div">
-                <p className="font-mono text-sm text-violet-crown-800/70 leading-relaxed">
+                <p className="font-mono text-sm text-violet-crown-800/70 leading-relaxed text-center md:text-left">
                     Operators are standing by.
                 </p>
             </BlurFocus>

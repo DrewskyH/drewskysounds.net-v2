@@ -10,6 +10,7 @@
   --twilight-pink: #c47fd5;
   /* Accents */
   --deep-blue: #536b98;
+  --deep-blue-dark: #2a364f;
   /* Deep Blue companion */
   --soft-white: #f8f5f2;
   /* Background */
@@ -24,6 +25,7 @@
   --color-sunset-orange: var(--sunset-orange);
   --color-twilight-pink: var(--twilight-pink);
   --color-deep-blue: var(--deep-blue);
+  --color-deep-blue-dark: var(--deep-blue-dark);
   --color-soft-white: var(--soft-white);
 
   --color-background: var(--background);

@@ -64,9 +64,9 @@ export default function StudioPage() {
             {/* Specs Section - More Technical/Mono */}
             <section className="space-y-8">
                 <BlurFocus as="div">
-                    <h2 className="font-serif text-2xl text-violet-crown-900 mb-8">Sound Services</h2>
+                    <h2 className="font-serif text-2xl text-violet-crown-900 mb-8 text-center md:text-left">Sound Services</h2>
                 </BlurFocus>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 font-mono text-xs tracking-wider text-violet-crown-800/70">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 font-mono text-xs tracking-wider text-violet-crown-800/70 text-center md:text-left">
                     <BlurFocus as="div" className="space-y-4" hoverScale={1.02}>
                         <h3 className="uppercase font-bold text-twilight-pink mb-2">Film/TV</h3>
                         <ul className="space-y-2 list-none">

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[70vh]">
       {/* Visual Column */}
-      <BlurFocus className="relative aspect-[4/5] w-full max-w-md mx-auto lg:mx-0 rounded-sm overflow-hidden">
+      <BlurFocus className="relative aspect-[4/5] w-2/3 md:w-full max-w-md mx-auto lg:mx-0 rounded-sm overflow-hidden">
         <FadeInImage
           src="/images/portrait2.webp"
           alt="Drewsky Hulett"

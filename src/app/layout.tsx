@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 };
 
 import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function RootLayout({
@@ -36,9 +37,12 @@ export default function RootLayout({
         className={`${libreBaskerville.variable} ${sourceCodePro.variable} antialiased`}
       >
         <div className="relative min-h-screen w-full">
-          <Sidebar />
-          <main className="pl-[280px] min-h-screen">
-            <div className="max-w-5xl mx-auto p-12 md:px-24 md:pb-24 md:pt-12 relative z-10">
+          <MobileNav />
+          <div className="hidden md:block">
+            <Sidebar />
+          </div>
+          <main className="pl-0 md:pl-[280px] pt-16 md:pt-0 min-h-screen">
+            <div className="max-w-5xl mx-auto p-6 md:p-12 lg:px-24 md:pb-24 relative z-10">
               {children}
             </div>
           </main>
