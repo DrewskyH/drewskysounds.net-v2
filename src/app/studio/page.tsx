@@ -4,6 +4,7 @@ import { BlurFocus } from "@/components/BlurFocus";
 import { InfoPopup } from "@/components/InfoPopup";
 import { WavyDivider } from "@/components/WavyDivider";
 
+import { FadeInImage } from "@/components/FadeInImage";
 import Image from "next/image";
 
 export default function StudioPage() {
@@ -20,7 +21,7 @@ export default function StudioPage() {
                 {/* Top Images Grid */}
                 <div className="grid grid-cols-2 gap-4 mb-12">
                     <BlurFocus className="relative w-full aspect-[4/3] rounded-sm overflow-hidden shadow-lg hoverScale={1.04}">
-                        <Image
+                        <FadeInImage
                             src="/images/studio/studio-2.webp"
                             alt="Wide shot of the studio workspace"
                             fill
@@ -30,7 +31,7 @@ export default function StudioPage() {
                     </BlurFocus>
 
                     <BlurFocus className="relative w-full aspect-[4/3] rounded-sm overflow-hidden shadow-lg hoverScale={1.04}">
-                        <Image
+                        <FadeInImage
                             src="/images/studio/studio-3.webp"
                             alt="Alternative view of the studio"
                             fill
@@ -123,11 +124,11 @@ export default function StudioPage() {
             <section className="grid grid-cols-2 gap-4">
                 {[1, 2, 3, 4].map((num) => (
                     <BlurFocus key={num} className="relative aspect-[3/2] rounded-sm overflow-hidden shadow-md group" hoverScale={1.02}>
-                        <Image
+                        <FadeInImage
                             src={`/images/studio/grid-${num}.webp`}
                             alt={`Studio texture detail ${num}`}
                             fill
-                            className="object-cover transition-transform duration-700"
+                            className="object-cover transition-all duration-700"
                         />
                         <div className="absolute inset-0 bg-violet-crown-900/20 mix-blend-overlay opacity-50" />
                     </BlurFocus>

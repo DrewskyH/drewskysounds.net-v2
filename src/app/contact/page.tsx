@@ -1,7 +1,7 @@
 "use client";
 
 import { BlurFocus } from "@/components/BlurFocus";
-import Image from "next/image";
+import { FadeInImage } from "@/components/FadeInImage";
 import Link from "next/link";
 
 export default function ContactPage() {
@@ -27,7 +27,7 @@ export default function ContactPage() {
                 </p>
             </BlurFocus>
             <BlurFocus className="relative w-2/5 aspect-[6/9] rounded-sm overflow-hidden shadow-lg mb-6" hoverScale={1.007}>
-                <Image
+                <FadeInImage
                     src="/images/contact-me-2.webp"
                     alt="Drewsky answering 7 phones"
                     fill

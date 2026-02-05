@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
+import { FadeInImage } from "@/components/FadeInImage";
 import { cn } from "@/lib/utils";
 
 interface VimeoThumbnailProps {
@@ -37,12 +37,11 @@ export function VimeoThumbnail({ videoId, className, alt = "Project Video" }: Vi
             <div className="absolute inset-0 bg-violet-crown-900/10 animate-pulse" />
 
             {thumbUrl && (
-                <Image
+                <FadeInImage
                     src={thumbUrl}
                     alt={alt}
                     fill
-                    className="object-cover transition-opacity duration-700 opacity-0"
-                    onLoad={(e) => e.currentTarget.classList.remove('opacity-0')}
+                    className="object-cover"
                 />
             )}
         </div>
