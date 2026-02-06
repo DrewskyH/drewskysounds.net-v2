@@ -25,6 +25,7 @@ export const metadata: Metadata = {
 import { Sidebar } from "@/components/Sidebar";
 import { MobileNav } from "@/components/MobileNav";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function RootLayout({
   children,
@@ -48,6 +49,7 @@ export default function RootLayout({
           </main>
         </div>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
