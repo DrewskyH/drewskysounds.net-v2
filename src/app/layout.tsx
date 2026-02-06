@@ -19,7 +19,20 @@ const sourceCodePro = Source_Code_Pro({
 
 export const metadata: Metadata = {
   title: "Drewsky Hulett",
-  description: "Senior Creative Developer & Web Architect",
+  description: "Music and Sound for Film & Beyond",
+  openGraph: {
+    title: "Drewsky Hulett",
+    description: "Music and Sound for Film & Beyond",
+    url: "https://drewskysounds.net",
+    siteName: "Drewsky Hulett",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Drewsky Hulett",
+    description: "Music and Sound for Film & Beyond",
+  },
 };
 
 import { Sidebar } from "@/components/Sidebar";
