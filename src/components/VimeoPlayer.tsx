@@ -46,6 +46,14 @@ export function VimeoPlayer({
 
         player.ready().then(() => {
             setIsLoaded(true);
+
+            // Default to full volume if not muted
+            if (!muted) {
+                player.setVolume(1).catch((err) => {
+                    console.error("Error setting volume:", err);
+                });
+            }
+
             Promise.all([player.getVideoWidth(), player.getVideoHeight()]).then(([w, h]) => {
                 onReady?.(w, h);
             });
